@@ -19,9 +19,9 @@ export default function Home() {
       <section>
         <h2>Explore</h2>
         <ul>
-          <li><Link href="/resume"><a>Interactive Resume</a></Link></li>
-          <li><Link href="/blog"><a>Technical Blog (Hashnode CMS)</a></Link></li>
-          <li><Link href="/projects"><a>Applications Portfolio</a></Link></li>
+          <li><Link href="/resume">Interactive Resume</Link></li>
+          <li><Link href="/blog">Technical Blog (Hashnode CMS)</Link></li>
+          <li><Link href="/projects">Applications Portfolio</Link></li>
         </ul>
       </section>
     </Layout>

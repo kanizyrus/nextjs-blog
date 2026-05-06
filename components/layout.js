@@ -25,16 +25,12 @@ export default function Layout({ children, home }) {
 
       <header className={styles.header}>
         <div>
-          <Link href="/">
-            <a className={styles.brand}>kaniz.dev</a>
-          </Link>
+          <Link href="/" className={styles.brand}>kaniz.dev</Link>
           {home && <p className={styles.tagline}>Engineer • Builder • Writer</p>}
         </div>
         <nav className={styles.nav}>
           {navLinks.map((link) => (
-            <Link href={link.href} key={link.href}>
-              <a>{link.label}</a>
-            </Link>
+            <Link href={link.href} key={link.href}>{link.label}</Link>
           ))}
         </nav>
       </header>
@@ -43,9 +39,7 @@ export default function Layout({ children, home }) {
 
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
-            <a className={utilStyles.colorInherit}>← Back to home</a>
-          </Link>
+          <Link href="/" className={utilStyles.colorInherit}>← Back to home</Link>
         </div>
       )}
     </div>
